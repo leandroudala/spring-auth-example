@@ -1,0 +1,17 @@
+{"properties": [
+  {
+    "name": "ssn.jwt.secret",
+    "type": "java.lang.String",
+    "description": "JWT Secret key"
+  },
+  {
+    "name": "ssn.jwt.expiration",
+    "type": "java.lang.String",
+    "description": "JWT expiration time in miliseconds"
+  },
+  {
+    "name": "ssn.passwords.salt",
+    "type": "java.lang.String",
+    "description": "Hash for Bcrypt SALT"
+  }
+]}

@@ -1,0 +1,18 @@
+server:
+  port: ${SSN_AUTH_PORT:8080}
+
+spring:
+    jpa:
+        hibernate:
+            ddl-auto: update
+    datasource:
+        url: jdbc:mysql://${SSN_DATABASE_HOST:localhost}:3306/${SSN_DATABASE_NAME}?serverTimezone=UTC
+        username: ${SSN_DATABASE_USERNAME}
+        password: ${SSN_DATABASE_PASSWORD}
+
+ssn:
+    jwt:
+        secret: ${SSN_JWT_SECRET}
+        expiration: ${SSN_JWT_EXPIRATION:86400000}
+    passwords:
+        salt: ${SSN_PASSWORDS_SALT}
